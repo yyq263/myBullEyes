@@ -13,6 +13,7 @@
 		2004E6DF1DAD1B19008322C8 /* BullsEye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2004E6DD1DAD1B19008322C8 /* BullsEye.xcdatamodeld */; };
 		2004E6E11DAD1B19008322C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2004E6E01DAD1B19008322C8 /* Assets.xcassets */; };
 		2004E6E41DAD1B19008322C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2004E6E21DAD1B19008322C8 /* LaunchScreen.storyboard */; };
+		206E18BB1DB1FE2E004A3A29 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206E18BA1DB1FE2E004A3A29 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2004E6E01DAD1B19008322C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2004E6E31DAD1B19008322C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2004E6E51DAD1B19008322C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206E18BA1DB1FE2E004A3A29 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				2004E6D61DAD1B19008322C8 /* AppDelegate.swift */,
 				2004E6D81DAD1B19008322C8 /* ViewController.swift */,
+				206E18BA1DB1FE2E004A3A29 /* AboutViewController.swift */,
 				2004E6DA1DAD1B19008322C8 /* Main.storyboard */,
 				2004E6E01DAD1B19008322C8 /* Assets.xcassets */,
 				2004E6E21DAD1B19008322C8 /* LaunchScreen.storyboard */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					2004E6D21DAD1B18008322C8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Z7T2H84A78;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,6 +145,7 @@
 			files = (
 				2004E6DF1DAD1B19008322C8 /* BullsEye.xcdatamodeld in Sources */,
 				2004E6D91DAD1B19008322C8 /* ViewController.swift in Sources */,
+				206E18BB1DB1FE2E004A3A29 /* AboutViewController.swift in Sources */,
 				2004E6D71DAD1B19008322C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z7T2H84A78;
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs183p.yao.BullsEye;
@@ -274,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z7T2H84A78;
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs183p.yao.BullsEye;
@@ -301,6 +308,7 @@
 				2004E6EA1DAD1B19008322C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
