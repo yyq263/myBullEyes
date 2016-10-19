@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
-    
+
     @IBOutlet weak var roundLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var targetLabel: UILabel! //Interface Building
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
     var round = 0
     
     @IBOutlet weak var slider: UISlider!
-    
+
     @IBAction func sliderMoved(_ sender: UISlider) {
         //print("Slider now is at \(sender.value)")
         currentValueOfSlider = lroundf(sender.value)
@@ -34,6 +35,11 @@ class ViewController: UIViewController {
     @IBAction func staroverButton(_ sender: UIButton) {
         startNewGame()
         updateLabels()
+        let transition = CATransition()
+        transition.type = kCATransitionFade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        view.layer.add(transition, forKey: nil)
     }
     
     @IBAction func showAlert(_ sender: UIButton) {
@@ -93,14 +99,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizable =
+            trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizable =
+            trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
+        
         startNewGame()
         updateLabels()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 
 }

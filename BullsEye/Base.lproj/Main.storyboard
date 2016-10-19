@@ -15,97 +15,131 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyf-gs-Ywb">
-                                <frame key="frameInset" minX="313" minY="204" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hit Me!"/>
-                                <connections>
-                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r7Y-vj-9y6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pull the Bull's Eye as close as you can to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzA-BE-mRV">
-                                <frame key="frameInset" minX="182" minY="82" width="312" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO7-Ss-oKJ">
-                                <frame key="frameInset" minX="502" minY="82" width="29" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-WB-HO5">
-                                <frame key="frameInset" minX="127" minY="136" width="8" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mc8-f0-76e">
-                                <frame key="frameInset" minX="542" minY="136" width="29" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4x9-GJ-aif">
-                                <frame key="frameInset" minX="142" minY="131" width="395" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="46J-BT-dhA"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oY-oF-e61">
-                                <frame key="frameInset" minX="206" minY="276" width="50" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdG-MY-0sD">
-                                <frame key="frameInset" minX="456" minY="276" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yww-GM-Dh5">
-                                <frame key="frameInset" minX="256" minY="276" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHR-8P-tDP">
-                                <frame key="frameInset" minX="512" minY="276" width="32" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdu-dk-bkw">
-                                <frame key="frameInset" minX="118" minY="272" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start Over"/>
-                                <connections>
-                                    <action selector="staroverButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rj3-jw-G2U"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-ln-LM2">
-                                <frame key="frameInset" minX="568" minY="275" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="wjl-2f-ccG" kind="presentation" modalTransitionStyle="coverVertical" id="lQR-BJ-VxL"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="5ge-gn-By9"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOB-6i-Eap">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyf-gs-Ywb">
+                                        <frame key="frameInset" minX="195" minY="138" width="100" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
+                                            <color key="titleColor" red="0.37231525778770447" green="0.12530982494354248" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Hit Me!" backgroundImage="Button-Highlighted">
+                                            <color key="titleShadowColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r7Y-vj-9y6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pull the Bull's Eye as close as you can to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzA-BE-mRV">
+                                        <frame key="frameInset" minX="94" minY="20" width="316" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.48999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO7-Ss-oKJ">
+                                        <frame key="frameInset" minX="414" minY="20" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-WB-HO5">
+                                        <frame key="frameInset" minX="39" minY="75" width="9" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                        <color key="textColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mc8-f0-76e">
+                                        <frame key="frameInset" minX="435" minY="75" width="25" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                        <color key="textColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4x9-GJ-aif">
+                                        <frame key="frameInset" minX="54" minY="69" width="372" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="46J-BT-dhA"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oY-oF-e61">
+                                        <frame key="frameInset" minX="86" minY="214" width="51" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        <color key="textColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdG-MY-0sD">
+                                        <frame key="frameInset" minX="292" minY="214" width="56" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        <color key="textColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yww-GM-Dh5">
+                                        <frame key="frameInset" minX="142" minY="212" width="72" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <color key="textColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdu-dk-bkw">
+                                        <frame key="frameInset" minX="8" minY="208" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="StartOverIcon" backgroundImage="SmallButton"/>
+                                        <connections>
+                                            <action selector="staroverButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rj3-jw-G2U"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHR-8P-tDP">
+                                        <frame key="frameInset" minX="357" minY="212" width="36" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <color key="textColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-ln-LM2">
+                                        <frame key="frameInset" minX="424" minY="208" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="InfoButton" backgroundImage="SmallButton"/>
+                                        <connections>
+                                            <segue destination="wjl-2f-ccG" kind="presentation" modalTransitionStyle="coverVertical" id="lQR-BJ-VxL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="9fa-NT-XAZ"/>
+                                    <constraint firstAttribute="width" constant="464" id="mGz-BI-kUe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OOB-6i-Eap" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OPE-lX-Sxa"/>
+                            <constraint firstItem="5ge-gn-By9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jZH-G4-jZw"/>
+                            <constraint firstItem="5ge-gn-By9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kog-bx-9hH"/>
+                            <constraint firstItem="OOB-6i-Eap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s42-V6-29y"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="roundLabel" destination="cHR-8P-tDP" id="DgB-Rx-vaD"/>
@@ -116,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.7376311844078" y="36"/>
+            <point key="canvasLocation" x="23.75" y="35.625"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Hh2-lq-AeP">
@@ -127,34 +161,55 @@
                         <viewControllerLayoutGuide type="bottom" id="kSI-if-PjP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9h6-UH-xSc">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-AL-weo">
-                                <frame key="frameInset" minX="314" minY="325" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Close"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="wmZ-Mv-HCT"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y95-Pd-zfx">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-AL-weo">
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.37647058823529411" green="0.11764705882352941" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" title="Close" backgroundImage="Button-Highlighted">
+                                    <color key="titleShadowColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="close:" destination="wjl-2f-ccG" eventType="touchUpInside" id="N6Z-hO-ZcG"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iJ0-XA-gXA">
-                                <frame key="frameInset" minX="20" minY="28" width="627" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">*** Bull’s Eye ***
-Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a slider.
-Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wmZ-Mv-HCT" firstAttribute="centerY" secondItem="9h6-UH-xSc" secondAttribute="centerY" id="1Og-aH-vmf"/>
+                            <constraint firstItem="0Xz-AL-weo" firstAttribute="top" secondItem="Y95-Pd-zfx" secondAttribute="bottom" constant="8" id="6H3-tT-vZZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Y95-Pd-zfx" secondAttribute="trailing" constant="20" id="AXf-HD-6AB"/>
+                            <constraint firstItem="wmZ-Mv-HCT" firstAttribute="centerX" secondItem="9h6-UH-xSc" secondAttribute="centerX" id="N5Z-nJ-Ps4"/>
+                            <constraint firstItem="0Xz-AL-weo" firstAttribute="centerX" secondItem="9h6-UH-xSc" secondAttribute="centerX" id="X58-5k-JHo"/>
+                            <constraint firstItem="kSI-if-PjP" firstAttribute="top" secondItem="0Xz-AL-weo" secondAttribute="bottom" constant="20" id="m7d-vt-3Wi"/>
+                            <constraint firstItem="Y95-Pd-zfx" firstAttribute="top" secondItem="Dl8-no-INy" secondAttribute="bottom" constant="20" id="oJr-KE-O8i"/>
+                            <constraint firstItem="Y95-Pd-zfx" firstAttribute="leading" secondItem="9h6-UH-xSc" secondAttribute="leading" constant="20" id="zGI-Q1-68i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Y95-Pd-zfx" id="gcp-90-EuH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPG-ZT-Ens" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707.49625187406298" y="37.600000000000001"/>
+            <point key="canvasLocation" x="706.25" y="37.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="568" height="320"/>
+        <image name="Button-Highlighted" width="100" height="37"/>
+        <image name="Button-Normal" width="100" height="37"/>
+        <image name="InfoButton" width="10" height="22"/>
+        <image name="SmallButton" width="32" height="32"/>
+        <image name="StartOverIcon" width="20" height="20"/>
+    </resources>
 </document>
